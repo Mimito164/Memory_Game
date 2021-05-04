@@ -30,6 +30,10 @@ document.addEventListener('DOMContentLoaded', () =>{
             img: 'Images/Lilith.png'
         },
         {
+            name: 'Lilith',
+            img: 'Images/Lilith.png'
+        },
+        {
             name: 'Lazarus',
             img: 'Images/Lazarus.png'
         },
@@ -44,27 +48,20 @@ document.addEventListener('DOMContentLoaded', () =>{
         {
             name: 'Eve',
             img: 'Images/Eve.png'
-        },
-        {
-            name: 'Diabolo',
-            img: 'Images/Diabolo.jpg'
-        },
-        {
-            name: 'Diabolo',
-            img: 'Images/Diabolo.jpg'
         },
     ]
 
     const grid = document.querySelector('.grid');
-    console.log(grid);
 
     function createBoard(){
         for(let i = 0; i < cardArray.length; i++){
             var card = document.createElement('img');
-            card.setAttribute('src', 'Images/dado.png');
+            card.setAttribute('src', 'Images/Dado.png');
             card.setAttribute('data-id', i);
-            // card.addEventListener('click', flipCard());
+            // card.addEventListener('click', flipCard);
             grid.appendChild(card);
         }
     }
+
+    
 })
