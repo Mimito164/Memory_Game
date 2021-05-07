@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     const grid = document.querySelector('.grid'); // querySelector selects an specific section from html file and converts it to an object
     const resultDisplay = document.querySelector('#result');
+    let cardsArray = [];
     var cardsChosen = [];
     var cardsChosenId = [];
     var cardsWon = [];
@@ -77,7 +78,8 @@ document.addEventListener('DOMContentLoaded', () =>{
         if(cardsChosen[0] === cardsChosen[1]){
             alert('yep');
             
-            cardsWon.push(cardsChosen)
+            cardsWon.push(cardsChosen);
+            console.log(cardsWon);
         } else {
             cards[optionOneId].setAttribute('src', 'Images/Momia.jpg');
             cards[optionTwoId].setAttribute('src', 'Images/Momia.jpg');
